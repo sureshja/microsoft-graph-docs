@@ -1,17 +1,17 @@
 ---
-title: "application: removePassword"
-description: "Removes a password from an application"
+title: "servicePrincipal: removePassword"
+description: "Removes a password from a servicePrincipal"
 localization_priority: Normal
 author: "sureshja"
 ms.prod: ""
 doc_type: "apiPageType"
 ---
 
-# application: removePassword
+# appliservicePrincipalcation: removePassword
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a password from an application.
+Removes a password from a servicePrincipal.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /applications/{id}/removePassword
+POST /servicePrincipals/{id}/removePassword
 ```
 
 ## Request headers
@@ -58,11 +58,11 @@ The following is an example of how to call this API.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "application_removepassword"
+  "name": "servicePrincipal_removepassword"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/removePassword
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/removePassword
 Content-type: application/json
 
 {
@@ -88,7 +88,7 @@ The following is an example of the response.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "application: removePassword",
+  "description": "servicePrincipal: removePassword",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,17 +1,17 @@
 ---
-title: "application: addPassword"
-description: "Adds a strong password to an application."
+title: "servicePrincipal: addPassword"
+description: "Adds a strong password to a servicePrincipal."
 localization_priority: Normal
 author: "sureshja"
 ms.prod: ""
 doc_type: "apiPageType"
 ---
 
-# application: addPassword
+# servicePrincipal: addPassword
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a strong password to an application.
+Adds a strong password to a servicePrincipal.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /applications/{id}/addPassword
+POST /servicePrincipals/{id}/addPassword
 ```
 
 ## Request headers
@@ -60,11 +60,11 @@ The following is an example of how to call this API.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "application_addpassword"
+  "name": "servicePrincipal_addpassword"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/addPassword
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/addPassword
 Content-type: application/json
 
 {
@@ -102,7 +102,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "application: addPassword",
+  "description": "servicePrincipal: addPassword",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
