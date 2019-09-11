@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: "apiPageType"
 ---
 
-# application: addPasswordKey
+# application: addKey
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
