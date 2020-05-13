@@ -63,6 +63,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | appRoles | [appRole](approle.md) collection | The collection of roles declared by the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or other applications' service principals. Not nullable. |
 | createdDateTime | DateTimeOffset | The date and time the application was registered. Read-only. |
 | deletedDateTime | DateTimeOffset | The date and time the application was deleted. Read-only. |
+|description| String | Free text field to provide a description of the application. The maximum allowed size is 1024 characters.|
 | displayName | String | The display name for the application. |
 | groupMembershipClaims | String | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the application expects. To set this attribute, use one of the following valid string values:<ul><li>`None`</li><li>`SecurityGroup`: For security groups and Azure AD roles</li><li>`All`: This will get all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of</li></ul> |
 | id | String | The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
@@ -71,6 +72,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false` which means the fallback application type is confidential client such as web app. There are certain scenarios where Azure AD cannot determine the client application type (e.g. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI). In those cases Azure AD will interpret the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application Not nullable. |
 | logo | Stream | The main logo for the application. Not nullable. |
+|notes|String|Free text field to capture information about the application, typically used for operational purposes. Maximum allowed size is 1024 characters.|
 | oauth2RequiredPostResponse | Boolean | Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow POST requests, as opposed to GET requests. The default is false, which specifies that only GET requests will be allowed. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [provide optional claims to your Azure AD app](/azure/active-directory/develop/active-directory-optional-claims) for more information.|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Specifies parental control settings for an application. |
